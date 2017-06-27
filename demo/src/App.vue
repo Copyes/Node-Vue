@@ -1,23 +1,49 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <c-header></c-header>
+    <section class="main">
+        <router-view></router-view>
+    </section>
   </div>
 </template>
 
 <script>
+import cHeader from './components/c-header'
 export default {
-  name: 'app'
+    name: 'app',
+    components: {
+      cHeader
+    }
 }
 </script>
 
 <style lang="less">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+html,
+  #app {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    color: #CCC;
+    text-decoration: none;
+  }
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  .main {
+    margin-top: 80px;
+    overflow: hidden;
+    padding: 0 5%;
+    min-height: 100%;
+  }
 </style>

@@ -8,7 +8,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-
+var fs = require('fs');
 var env = config.build.env
 
 var webpackConfig = merge(baseWebpackConfig, {
@@ -116,5 +116,8 @@ if (config.build.bundleAnalyzerReport) {
   var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
 }
+
+fs.writeFileSync('message.txt', JSON.stringify(webpackConfig));
+
 
 module.exports = webpackConfig
