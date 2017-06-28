@@ -5,6 +5,8 @@ const logger = require('koa-logger');
 const bodyparser = require('koa-bodyparser');
 const auth = require('./server/routes/auth.js');
 const api = require('./server/routes/api.js');
+const movies = require('./server/routes/movies.js');
+
 const jwt = require('koa-jwt');
 
 app.use(bodyparser());
@@ -42,6 +44,8 @@ app.on('error', function(err, ctx){
 
 koaRouter.use('/auth', auth.routes());
 koaRouter.use('/api', jwt({secret: 'vue-koa-fan'}), api.routes());
+koaRouter.use('/movies', movies.routes());
+
 
 app.use(koaRouter.routes());
 
