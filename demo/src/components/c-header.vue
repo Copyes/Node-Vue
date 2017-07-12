@@ -5,6 +5,9 @@
 				<li>主页</li>
 				<li>关于</li>
 			</ul>
+			<div class="avatar">
+				<img class="img" src="http://i4.piimg.com/1949/caa8c317dbcab5d1.png" alt="">
+			</div>
 		</nav>
 	</header>
 </template>
@@ -19,17 +22,18 @@
 </script>
 <style lang="less">
 	.header {
-		position: fixed;
-	    left: 0;
-	    top: 0;
+		// position: fixed;
+	 //    left: 0;
+	 //    top: 0;
 	    width: 100%;
 	    color: #fff;
 	    height: 56px;
 	    background: #3F51B5;
+	    //z-index: 100;
 	}
 	.category {
-		margin-bottom: 20px;
-		width: 100%;
+		margin: 0 auto 20px;
+		width: 1000px;
 		height: 100%;
 		.cate-list {
 			float: right;
@@ -40,7 +44,20 @@
 			width: 60px;
 			height: 56px;
 			line-height: 56px;
+			text-align: center;
 			color: #fff;
+		}
+		.avatar {
+			float: right;
+			width: 56px;
+			line-height: 56px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		.img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
 		}
 	}
 </style>

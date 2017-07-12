@@ -1,18 +1,22 @@
 <template>
   <div id="app">
     <c-header></c-header>
-    <section class="main">
+    <c-aside></c-aside>
+    <!-- <section class="main"> -->
         <router-view></router-view>
-    </section>
+    <!-- </section> -->
   </div>
 </template>
 
 <script>
 import cHeader from './components/c-header'
+import cAside from './components/c-aside'
+
 export default {
     name: 'app',
     components: {
-      cHeader
+      cHeader,
+      cAside
     }
 }
 </script>
@@ -21,6 +25,8 @@ export default {
 html,
   #app {
     height: 100%;
+    color: #444;
+    background-color: #ebf0f0;
   }
   body {
     height: 100%;
@@ -41,9 +47,9 @@ html,
     max-width: 100%;
   }
   .main {
-    margin-top: 80px;
+    margin: 20px auto 0;
+    width: 1000px;
     overflow: hidden;
-    padding: 0 5%;
     min-height: 100%;
   }
 </style>
