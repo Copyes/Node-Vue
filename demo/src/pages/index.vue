@@ -1,12 +1,18 @@
 <template>
-	<div class="home">
-<!-- 		<c-aside></c-aside>
- -->		<c-posts></c-posts>
-	</div>
+	<el-row class="main">
+        <c-aside></c-aside>
+        <el-col :span="12" :offset="6">
+            <router-view></router-view>
+        </el-col>
+        <el-col :span="4" :offset="1">
+            <c-sidebar></c-sidebar>
+        </el-col>
+    </el-row>
 </template>
 <script>
-	// import cAside from '../components/c-aside.vue';
-	import cPosts from '../components/c-posts.vue';
+	import cHeader from '../components/c-header'
+	import cAside from '../components/c-aside'
+	import cSidebar from '../components/c-sidebar'
 	export default {
 		data(){
 			return {
@@ -14,18 +20,11 @@
 			}
 		},
 		components: {
-			// cAside,
-			cPosts
+			cAside,
+			cSidebar
 		}
 	}
 </script>
 <style lang="less">
-	.home {
-		display: flex;
-		justify-content: row;
-		margin: 0 auto;
-		padding-top: 50px;
-		width: 1080px;
-		
-	}
+	
 </style>

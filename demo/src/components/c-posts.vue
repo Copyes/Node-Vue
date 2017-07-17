@@ -18,6 +18,16 @@
 					<p class="time">2017.7.12</p>
 					<p class="content">快被人工智能（AI）这几个字烦死了。创业项目简直是热门词汇的集中营，不贴「智能」、「AI」这两个标签，就好像项目缺乏了氧气，难以呼吸。...</p>
 				</li>
+				<li class="post">
+					<a class="title" href="#">是时候开始你的表演了！！！</a>
+					<p class="time">2017.7.12</p>
+					<p class="content">快被人工智能（AI）这几个字烦死了。创业项目简直是热门词汇的集中营，不贴「智能」、「AI」这两个标签，就好像项目缺乏了氧气，难以呼吸。...</p>
+				</li>
+				<li class="post">
+					<a class="title" href="#">是时候开始你的表演了！！！</a>
+					<p class="time">2017.7.12</p>
+					<p class="content">快被人工智能（AI）这几个字烦死了。创业项目简直是热门词汇的集中营，不贴「智能」、「AI」这两个标签，就好像项目缺乏了氧气，难以呼吸。...</p>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -27,9 +37,6 @@
 </script>
 <style lang="less" scoped>
 	.c-poasts {
-		margin-left: 30px;
-		width: 60%;
-		
 		background-color: #fff;
 		border-radius: 5px;
 	    box-shadow: 0 5px 15px rgba(0,0,0,.12);

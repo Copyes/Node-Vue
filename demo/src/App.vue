@@ -1,22 +1,30 @@
 <template>
   <div id="app">
-    <c-header></c-header>
-    <c-aside></c-aside>
-    <!-- <section class="main"> -->
-        <router-view></router-view>
-    <!-- </section> -->
+    <router-view></router-view>
+    <!-- <c-header></c-header> -->
+    <!-- <el-row class="main">
+        <c-aside></c-aside>
+        <el-col :span="12" :offset="6">
+            <router-view></router-view>
+        </el-col>
+        <el-col :span="4" :offset="1">
+            <c-sidebar></c-sidebar>
+        </el-col>
+    </el-row> -->
   </div>
 </template>
 
 <script>
 import cHeader from './components/c-header'
 import cAside from './components/c-aside'
+import cSidebar from './components/c-sidebar'
 
 export default {
     name: 'app',
     components: {
       cHeader,
-      cAside
+      cAside,
+      cSidebar
     }
 }
 </script>
@@ -47,9 +55,6 @@ html,
     max-width: 100%;
   }
   .main {
-    margin: 20px auto 0;
-    width: 1000px;
-    overflow: hidden;
-    min-height: 100%;
+    margin-top: 50px;
   }
 </style>

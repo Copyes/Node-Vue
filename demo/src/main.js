@@ -16,7 +16,7 @@ router.beforeEach((to, from, next) => {
 
 	if(to.path == '/'){
 		if(token != null && token != 'null'){
-			next('/todo-list');
+			//next('/todo-list');
 		}
 		next();
 	}else{

@@ -19,12 +19,14 @@
 </script>
 <style lang="less">
 	.c-aside {
+		position: relative;
 		overflow: hidden;
 	}
 	.aside-content {
-		// position: fixed;
-	 //    top: 80px;
-	    width: 187px;
+		position: fixed;
+	    top: 50px;
+	    left: 70px;
+	    width: 200px;
 	    background: #fff;
 	    border-radius: 5px;
 	    box-shadow: 0 5px 15px rgba(0,0,0,.12);
